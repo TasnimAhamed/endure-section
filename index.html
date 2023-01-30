@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Carousel</title>
+    <link rel="stylesheet" href="css/splide.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .image--with-text{
+            padding: 24px 0;
+            background: #F8F8F8;
+        }
+        .image--with-text .page-width{
+            max-width: 1280px;
+            padding: 0 24px;
+            margin: 0 auto;
+        }
+        .image--width-text-row{
+            display: flex;
+            flex-wrap:wrap;
+        }
+        .image--width-text-row .image--width-text-column-1{
+            width: 100%;
+            max-width: 40%;
+            flex-basis: 40%;
+        }
+        .image--width-text-row .image--width-text-column-1 .image--width-text-content{
+            padding-right: 120px;
+        }
+        .image--width-text-row .image--width-text-column-2{
+            width: 100%;
+            max-width: 60%;
+            flex-basis: 60%;
+        }
+        .image--width-text-image-wrapper .image--width-text-image img{
+            width: 100%;
+        }
+        .image--width-text-content h2{
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+        .image--width-text-content p{
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        .image--width-text-content .btn{
+            padding: 12px 14px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            background: #313652;
+            border-radius: 50px;
+            color: #ffffff;
+            border: 0;
+        }
+        .image--width-text-image-wrapper{
+            position: relative;
+        }
+        .image--width-text-content-block
+        {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 32px;
+            color: #ffffff;
+            max-width: 80%;
+        }
+        .image--width-text-content-block h3{
+            font-size: 24px;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+        .image--width-text-content-block p{
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="image--with-text">
+        <div class="page-width">
+            <div class="image--width-text-row">
+                <div class="image--width-text-column-1">
+                    <div class="image--width-text-content">
+                        <h2>What makes our Silicone Foley Catheter Different?</h2>
+                        <p>The Silicone Foley Catheter are made entirely of biocompatible selicon. The Silicone Foley Catheter are made entirely of biocompatible selicon. The Silicone Foley Catheter are made entirely of biocompatible selicon.</p>
+                        <p>The Silicone Foley Catheter are made entirely of biocompatible selicon. The Silicone Foley Catheter are made entirely of biocompatible selicon. The Silicone Foley Catheter are made entirely of biocompatible selicon.</p>
+                        <p>The Silicone Foley Catheter are made entirely of biocompatible selicon. The Silicone Foley Catheter are made entirely of biocompatible selicon. The Silicone Foley Catheter are made entirely of biocompatible selicon.</p>
+                        <button class="btn">Order Free Sample</button>
+                    </div>
+                </div>
+                <div class="image--width-text-column-2">
+                    <div class="image--width-text-image-wrapper">
+                        <div class="image--width-text-image">
+                            <img src="./image.png" alt="">
+                        </div>
+                        <div class="image--width-text-content-block">
+                                <h3>Leak-Resistant Seal</h3>
+                                <p>Screw top with build-in Scoop and clear transparent plastic container</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/splide.min.js"></script>
+
+    <script>
+        var main = new Splide( '#testimonial-section', {
+                type      : 'loop',
+                perPage:1,
+                perMove: 1,
+                pagination: false,
+                arrows    : true,
+                gap:"30px",
+                padding:"20rem"
+            } );
+        main.mount()
+    </script>
+</body>
+</html>
